@@ -15,10 +15,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd9-6u-erw">
+                                <rect key="frame" x="57" y="128" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="iF1-Pm-956"/>
+                                    <constraint firstAttribute="height" constant="100" id="nzC-wu-29F"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="france"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHk-FQ-RL8">
+                                <rect key="frame" x="57" y="278" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="bx0-px-PhF"/>
+                                    <constraint firstAttribute="height" constant="100" id="ulI-Mj-JFd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="germany"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRP-1i-Xcc">
+                                <rect key="frame" x="95" y="428" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nigeria"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JRP-1i-Xcc" firstAttribute="top" secondItem="HHk-FQ-RL8" secondAttribute="bottom" constant="50" id="3D3-rc-oDm"/>
+                            <constraint firstItem="fd9-6u-erw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hAx-9z-8TH"/>
+                            <constraint firstItem="HHk-FQ-RL8" firstAttribute="top" secondItem="fd9-6u-erw" secondAttribute="bottom" constant="50" id="m5m-a4-JOj"/>
+                            <constraint firstItem="HHk-FQ-RL8" firstAttribute="centerX" secondItem="fd9-6u-erw" secondAttribute="centerX" id="mm0-94-kdk"/>
+                            <constraint firstItem="JRP-1i-Xcc" firstAttribute="centerX" secondItem="HHk-FQ-RL8" secondAttribute="centerX" id="vWr-QK-CAq"/>
+                            <constraint firstItem="fd9-6u-erw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybg-qs-70h"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ljs-MB-2Jm"/>
+                    <connections>
+                        <outlet property="button1" destination="fd9-6u-erw" id="BXw-bs-zcT"/>
+                        <outlet property="button2" destination="HHk-FQ-RL8" id="dgP-dw-2qb"/>
+                        <outlet property="button3" destination="JRP-1i-Xcc" id="4Dc-A3-u84"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,6 +82,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="france" width="200" height="100"/>
+        <image name="germany" width="200" height="100"/>
+        <image name="nigeria" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
