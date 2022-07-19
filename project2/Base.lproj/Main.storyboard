@@ -18,22 +18,28 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd9-6u-erw">
                                 <rect key="frame" x="95" y="139" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fd9-6u-erw" secondAttribute="height" multiplier="112:57" id="xzU-Tc-whD"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="france"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htK-qD-jeG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHk-FQ-RL8">
-                                <rect key="frame" x="95" y="303" width="224" height="114"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHk-FQ-RL8">
+                                <rect key="frame" x="95" y="283" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HHk-FQ-RL8" secondAttribute="height" multiplier="112:57" id="xhA-Zi-fS2"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="germany"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8H-6B-hAd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRP-1i-Xcc">
-                                <rect key="frame" x="96" y="428" width="224" height="114"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRP-1i-Xcc">
+                                <rect key="frame" x="95" y="427" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="nigeria"/>
                                 <connections>
@@ -50,9 +56,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JRP-1i-Xcc" firstAttribute="top" secondItem="HHk-FQ-RL8" secondAttribute="bottom" constant="50" id="3D3-rc-oDm"/>
                             <constraint firstItem="fd9-6u-erw" firstAttribute="top" secondItem="fjN-fK-mvl" secondAttribute="bottom" constant="20" id="DYE-08-vd1"/>
+                            <constraint firstItem="HHk-FQ-RL8" firstAttribute="top" secondItem="fd9-6u-erw" secondAttribute="bottom" constant="30" id="UJP-tW-RKo"/>
                             <constraint firstItem="fjN-fK-mvl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Vk9-mt-l4M"/>
+                            <constraint firstItem="HHk-FQ-RL8" firstAttribute="height" secondItem="fd9-6u-erw" secondAttribute="height" id="fHP-VN-Rid"/>
+                            <constraint firstItem="JRP-1i-Xcc" firstAttribute="height" secondItem="HHk-FQ-RL8" secondAttribute="height" id="gfR-II-oeN"/>
+                            <constraint firstItem="JRP-1i-Xcc" firstAttribute="top" secondItem="HHk-FQ-RL8" secondAttribute="bottom" constant="30" id="he7-8g-aCe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JRP-1i-Xcc" secondAttribute="bottom" constant="20" id="kIc-3d-0pA"/>
                             <constraint firstItem="HHk-FQ-RL8" firstAttribute="centerX" secondItem="fd9-6u-erw" secondAttribute="centerX" id="mm0-94-kdk"/>
                             <constraint firstItem="fjN-fK-mvl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sOA-KH-I6p"/>
                             <constraint firstItem="JRP-1i-Xcc" firstAttribute="centerX" secondItem="HHk-FQ-RL8" secondAttribute="centerX" id="vWr-QK-CAq"/>
